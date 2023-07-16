@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watchlist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+
+    .container {
+      margin: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #555;
+    }
+
+    .watchlistContainer {
+      margin-top: 20px;
+    }
+
+    .watchlistItem {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .watchlistButtons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .backButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .backButton:hover {
+      background-color: #b02a37;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Watchlist</h1>
+
+    <div class="watchlistContainer" id="watchlist"></div>
+
+    <button class="backButton" onclick="goBack()">Go Back</button>
+  </div>
+
+  <script src="watchlist.js"></script>
+</body>
+</html>
